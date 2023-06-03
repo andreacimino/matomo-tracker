@@ -171,7 +171,7 @@ class MatomoEvent {
       if (ecItems != null)
         'ec_items': jsonEncode(ecItems.map((i) => i.toArray()).toList()),
       if (aRevenue != null && aRevenue > 0)
-        'revenue': aRevenue.toStringAsFixed(2),
+        'revenue': aRevenue.toStringAsFixed(3),
       if (ecSt != null) 'ec_st': ecSt.toString(),
       if (ecTx != null) 'ec_tx': ecTx.toString(),
       if (ecSh != null) 'ec_sh': ecSh.toString(),
